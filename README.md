@@ -43,3 +43,6 @@ pip install wget
 
 ## 体验一下
 网站版体验通道：[这里](http://sakura.pysio.online/test/bililive.php)
+
+## readme统计
+![](https://count.getloli.com/get/@misaka10843.github.readme)
