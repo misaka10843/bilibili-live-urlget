@@ -32,6 +32,7 @@ bilibili直播流获取（可以说就是下载up的直播流视频qwq），使�
 ```python
 pip install wget
 ```
+(python为了数据传输准确判断和debug，所以可能会生成一些json，这些json理论上来说使用完毕后会删除，所以如果程序在运行的时候还请不要删除qwq)
 ### php
 网站版无须任何前置，只需要您优化界面就可以了
 
