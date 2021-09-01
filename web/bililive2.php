@@ -116,7 +116,7 @@ if (isset($_GET['uid'])) {
                 hasAudio: true,
                 hasVideo: true,
                 enableStashBuffer: true,
-                url: '<?php echo (stripslashes($getjson)) ?>;'
+                url: <?php echo (stripslashes($getjson)) ?>;
             });
             flvPlayer.attachMediaElement(videoElement);
             flvPlayer.load();
