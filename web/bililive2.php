@@ -35,6 +35,8 @@ if (isset($_GET['uid'])) {
     $getjson = $getjson['durl'];
     $getjson = json_encode($getjson[1]['url']);
 }
+
+$getjson=str_replace('"','',stripslashes($getjson));
 ?>
 <!DOCTYPE html>
 <html>
@@ -95,7 +97,7 @@ if (isset($_GET['uid'])) {
 <body>
     
     <div class="mainContainer">
-        <video name="videoElement" class="centeredVideo" id="videoElement" controls width="1024" height="576" autoplay>
+        <video muted name="videoElement" class="centeredVideo" id="videoElement" controls width="1024" height="576" autoplay>
             Your browser is too old which doesn't support HTML5 video.
         </video>
 
@@ -116,7 +118,7 @@ if (isset($_GET['uid'])) {
                 hasAudio: true,
                 hasVideo: true,
                 enableStashBuffer: true,
-                url: <?php echo (stripslashes($getjson)) ?>;
+                url: '<?php echo ($getjson) ?>'
             });
             flvPlayer.attachMediaElement(videoElement);
             flvPlayer.load();
